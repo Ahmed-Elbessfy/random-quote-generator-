@@ -1,33 +1,109 @@
 .App {
+  width: 18rem;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Dancing Script';
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#quote-box {
+  padding: 1rem;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+  border-radius: 13px;
+  background: #0f14177d;
+  box-shadow: 0px 0px 15px 5px #ffd7008c;
+}
+
+.btn {
+  height: 3rem;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: 'New Rocker';
+  font-size: 120%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:active {
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 12px #fff;
+  -moz-box-shadow: 0px 0px 12px #fff;
+  box-shadow: 0px 0px 12px #fff;
+}
+
+#new-quote {
+  background: #ffd700b5;
+  color: #fff;
+}
+
+#tweet-quote {
+  width: 3rem;
+  float: right;
+  background-color: #1DA1F2;
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.quote {
+  clear: both;
+  color: #fff;
+  text-shadow: 1px 1px 6px #111;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+blockquote {
+  width: 90%;
+  margin: 10px auto;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+blockquote i {
+  font-size: 110%;
+  transform: rotateX(180deg);
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+cite {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 120%;
+  font-weight: 600;
+}
+
+@media (min-width : 678px) {
+  .App {
+    width: 80%;
+    max-width: 45rem;
+    padding: 1.5rem;
   }
 }
